@@ -1,0 +1,9 @@
+{
+	"COLORS": {
+		"RED": "#e62b1e",
+		"BLACK": "#0a0a0a"
+	},
+	"UTILS": {
+		"NAV_HEIGHT": "70px"
+	}
+}
