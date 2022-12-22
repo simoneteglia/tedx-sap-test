@@ -27,11 +27,9 @@ export default function Header() {
 				}}
 			>
 				<p className="nav-button">Home</p>
-				<p className="nav-button">Partner</p>
-				<p className="nav-button">Come Partecipare</p>
 				<p className="nav-button">Edizione 2022</p>
 				<p className="nav-button">Blog</p>
-				<p className="nav-button">Team 2022</p>
+				<p className="nav-button">Team 2023</p>
 			</div>
 		</header>
 	);
