@@ -1,5 +1,6 @@
-import global from "../resources/global.json";
-import logo from "../resources/logo.webp";
+import global from "../../resources/global.json";
+import logo from "../../resources/logo.webp";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 	return (
@@ -26,10 +27,18 @@ export default function Header() {
 					fontSize: "1.1em",
 				}}
 			>
-				<p className="nav-button">Home</p>
-				<p className="nav-button">Edizione 2022</p>
-				<p className="nav-button">Blog</p>
-				<p className="nav-button">Team 2023</p>
+				<Link to="/" className="nav-button">
+					Home
+				</Link>
+				<Link to="/edizione-2022" className="nav-button">
+					Edizione 2022
+				</Link>
+				<Link to="/blog" className="nav-button">
+					Blog
+				</Link>
+				<Link to="/team-2023" className="nav-button">
+					Team 2023
+				</Link>
 			</div>
 		</header>
 	);

@@ -10,7 +10,7 @@ import {
 } from "@react-three/drei";
 import { FlakesTexture } from "three/examples/jsm/textures/FlakesTexture";
 
-import global from "../resources/global.json";
+import global from "../../resources/global.json";
 
 export default function Award3D() {
 	const [distanceX, setDistanceX] = useState(0);

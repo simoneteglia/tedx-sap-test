@@ -1,5 +1,5 @@
-import global from "../resources/global.json";
-import "../index.css";
+import global from "../../resources/global.json";
+import "../../index.css";
 
 export default function Title() {
 	return (

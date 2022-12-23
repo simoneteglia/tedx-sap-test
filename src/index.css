@@ -20,3 +20,9 @@ code {
 .nav-button:hover {
 	cursor: pointer;
 }
+
+.nav-button {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
