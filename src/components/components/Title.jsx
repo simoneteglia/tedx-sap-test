@@ -16,7 +16,7 @@ export default function Title() {
 				style={{
 					fontSize: "120px",
 					maxWidth: "6ch",
-					color: "#fff",
+					color: "#000",
 					fontFamily: "Akira",
 				}}
 			>

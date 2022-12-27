@@ -15,6 +15,7 @@ export default function Header() {
 				display: "flex",
 				alignItems: "center",
 				justifyContent: "space-between",
+				zIndex: 999,
 			}}
 		>
 			<img src={logo} height="60px" style={{ paddingLeft: "60px" }} />

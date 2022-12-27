@@ -5,6 +5,15 @@ body {
 		"Helvetica Neue", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	--purple: #9a51c5;
+	--dark-pink: #ff68c7;
+	--light-pink: #e599f0;
+	--violet: #da50e7;
+	--light-orange: #eca171;
+	--light-violet: #f068a1;
+	--light-purple: #cc6b88;
+	--orange: #ec795a;
+	--light-yellow: #feefab;
 }
 
 code {
@@ -17,6 +26,21 @@ code {
 	src: url("./resources//Akira\ Expanded\ Demo.otf");
 }
 
+.title-text {
+	position: relative;
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.title-text::before {
+	content: "BACK 2 ZERO";
+	position: absolute;
+	top: 0;
+	left: 0;
+	mix-blend-mode: overlay;
+	color: rgba(0, 0, 0, 1);
+	pointer-events: none;
+}
+
 .nav-button:hover {
 	cursor: pointer;
 }
@@ -25,4 +49,50 @@ code {
 	text-decoration: none;
 	color: black;
 	font-weight: 500;
+}
+
+.gradient-background {
+	background: radial-gradient(
+			ellipse at right bottom,
+			var(--light-yellow) 10%,
+			transparent 60%
+		),
+		radial-gradient(
+			ellipse at center bottom,
+			var(--violet) 20%,
+			transparent 50%
+		),
+		radial-gradient(ellipse at center, var(--orange) 50%, transparent 70%),
+		radial-gradient(
+			ellipse at left bottom,
+			var(--dark-pink) 10%,
+			transparent 40%
+		),
+		radial-gradient(
+			circle at right top,
+			var(--light-violet) 20%,
+			transparent 90%
+		),
+		radial-gradient(
+			ellipse at left top,
+			var(--purple) 30%,
+			transparent 100%
+		);
+	background-size: 250% 250%;
+	animation: gradient-aniamtion 20s linear infinite;
+}
+
+@keyframes gradient-aniamtion {
+	0% {
+		background-position: 0% 50%;
+		/* transform: rotate(0deg); */
+	}
+	50% {
+		background-position: 100% 50%;
+		/* transform: rotate(180deg); */
+	}
+	100% {
+		background-position: 0% 50%;
+		/* transform: rotate(360deg); */
+	}
 }

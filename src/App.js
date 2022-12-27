@@ -11,6 +11,7 @@ import {
 
 import global from "./resources/global.json";
 import LandingPage from "./components/pages/LadingPage";
+import LandingPageGradient from "./components/pages/LandingPageGradient";
 
 const router = createBrowserRouter([
 	{
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
 		element: (
 			<>
 				<Header />
+				<LandingPageGradient />
 			</>
 		),
 	},
